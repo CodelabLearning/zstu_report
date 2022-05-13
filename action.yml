@@ -13,6 +13,14 @@ inputs:
     description: 'your current living city'
     required: false
     default: '浙江省 杭州市 钱塘区'
+  notify:
+    description: 'your notify id'
+    required: false
+    default: ''
+  retries:
+    description: 'maximum retry number'
+    required: false
+    default: 0
 outputs:
   message: # id of output
     description: 'The return of the execution'
@@ -23,3 +31,5 @@ runs:
     - ${{ inputs.username }}
     - ${{ inputs.password }}
     - ${{ inputs.location }}
+    - ${{ inputs.notify }}
+    - ${{ inputs.retries }}
