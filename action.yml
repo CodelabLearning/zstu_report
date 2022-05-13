@@ -11,7 +11,7 @@ inputs:
     default: 'default'
   location:
     description: 'your current living city'
-    required: true
+    required: false
     default: '浙江省 杭州市 钱塘区'
 outputs:
   message: # id of output
