@@ -26,10 +26,5 @@ outputs:
     description: 'The return of the execution'
 runs:
   using: 'docker'
-  image: 'docker://typenoob/zstu_report'
+  image: 'docker://typenoob/zstu_auto'
   args:
-    - ${{ inputs.username }}
-    - ${{ inputs.password }}
-    - ${{ inputs.location }}
-    - ${{ inputs.notify }}
-    - ${{ inputs.retries }}
