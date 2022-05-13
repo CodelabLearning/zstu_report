@@ -12,6 +12,5 @@ jobs:
         with:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          location: ${{ secrets.LOCATION }}
       - name: Get the return
         run: echo "The result was ${{ steps.report.outputs.message }}"
