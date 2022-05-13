@@ -27,4 +27,3 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://typenoob/zstu_auto'
-  args:
