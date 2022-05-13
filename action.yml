@@ -1,0 +1,25 @@
+name: 'zstu-report'
+description: 'do zstu daily report'
+inputs:
+  username:
+    description: 'your zstu sso username/student number'
+    required: true
+    default: 'default'
+  password:
+    description: 'your zstu sso password'
+    required: true
+    default: 'default'
+  location:
+    description: 'your current living city'
+    required: true
+    default: '浙江省 杭州市 钱塘区'
+outputs:
+  message: # id of output
+    description: 'The return of the execution'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.username }}
+    - ${{ inputs.password }}
+    - ${{ inputs.location }}
